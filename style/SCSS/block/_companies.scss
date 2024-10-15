@@ -1,0 +1,75 @@
+.companies {
+    display: grid;
+    background-color: #000000d7;
+    z-index: 10000;
+
+    & .companies-1 {
+        color: #ffffffb4;
+        margin-top: 59px;
+        margin-bottom: 40px;
+    }
+    & .companies-2 {
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas:
+            "A B C D"
+            "E F G H";
+
+        & .logo-1 {
+            grid-area: A;
+        }
+        & .logo-2 {
+            grid-area: B;
+        }
+        & .logo-3 {
+            grid-area: C;
+        }
+        & .logo-4 {
+            grid-area: D;
+        }
+        & .logo-5 {
+            grid-area: E;
+        }
+        & .logo-6 {
+            grid-area: F;
+        }
+        & .logo-7 {
+            grid-area: G;
+        }
+        & .logo-8 {
+            grid-area: H;
+        }
+        & a {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+        }
+        & a::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(30deg, #ffffff00 15%, #8c45ff68 100%);
+            opacity: 0;
+            transition: opacity 0.7s ease-in-out;
+            z-index: -1;
+        }
+        & a:hover::before {
+            opacity: 1;
+        }
+    }
+}
+[class^="companies-"] {
+    text-align: center;
+    display: grid;
+}
+[class^="logos-"] {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    height: 98px;
+    width: 235px;
+    border: 1px solid #ffffff25;
+    border-radius: 10px;
+}

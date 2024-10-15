@@ -1,0 +1,503 @@
+@charset "UTF-8";
+.header {
+  position: fixed;
+  z-index: 10000000;
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1450980392);
+  gap: 74px;
+  background-color: rgba(255, 255, 255, 0.048);
+  backdrop-filter: blur(8px);
+}
+.header .border {
+  display: grid;
+  align-items: center;
+  border: solid 1px rgba(255, 255, 255, 0.1450980392);
+  border-radius: 2em;
+  column-gap: 30px;
+  grid-template-columns: repeat(5, 1fr);
+  height: 42px;
+  width: 512px;
+}
+.header .border .header-1 {
+  padding-left: 40px;
+}
+.header .border .header-5 {
+  padding-right: 40px;
+}
+.header a {
+  display: grid;
+  text-decoration: none;
+  color: #ffffff;
+}
+.header a ul {
+  display: grid;
+  height: 32px;
+  width: 121px;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  background-color: rgba(140, 69, 255, 0.3333333333);
+  outline-offset: 6px;
+  outline: 1px solid rgba(255, 255, 255, 0.1450980392);
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: inset 0px 0px 6px 3px rgba(255, 255, 255, 0.2705882353);
+  transition: 0.7s;
+}
+.header a ul li {
+  display: flex;
+}
+.header a :hover {
+  color: rgba(255, 255, 255, 0.5215686275);
+  outline-offset: 3px;
+  transition: 0.6s;
+}
+
+[class^=header-] {
+  text-align: center;
+  display: grid;
+}
+
+@font-face {
+  font-family: "Inter Regular";
+  src: url(../../../font/Inter/Inter-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #000000;
+  font-family: Inter Regular;
+  width: 100%;
+  height: 100%;
+}
+html .main,
+body .main {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
+
+.content {
+  display: grid;
+  background-image: url(../../../img/content_bacкground.png);
+  grid-template-rows: repeat(2);
+}
+.content .content-1 .hero {
+  margin-top: 153px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.content .content-1 .hero .stack {
+  display: grid;
+  grid-template-rows: repeat(4);
+  text-align: center;
+}
+.content .content-1 .hero .stack .stack-1 {
+  width: 300px;
+  height: 42px;
+  justify-self: center;
+  align-self: center;
+}
+.content .content-1 .hero .stack .stack-1 .border {
+  display: grid;
+  background-color: #000000;
+  align-items: center;
+  justify-content: space-around;
+  border: solid 1px rgba(255, 255, 255, 0.1450980392);
+  color: #9855ff;
+  font-size: 16px;
+  grid-template-columns: auto auto;
+  border-radius: 50px;
+  padding: 0 14px 0 14px;
+  gap: 7px;
+}
+.content .content-1 .hero .stack .stack-1 .border .new {
+  background-color: #9855ff;
+  border-radius: 40px;
+  font-weight: bold;
+  color: black;
+  font-size: 10px;
+  padding: 3px 4px 3px 4px;
+}
+.content .content-1 .hero .stack .stack-2 {
+  display: inline-flex;
+  margin-top: 13px;
+  font-size: 52px;
+  background: linear-gradient(180deg, #ffffff, #b372cf);
+  font-weight: 500;
+  background-clip: text;
+  -webkit-background-clip: text; /* Для поддержки WebKit-браузеров */
+  -webkit-text-fill-color: transparent; /* Убирает сплошной цвет текста */
+}
+.content .content-1 .hero .stack .stack-3 {
+  mix-blend-mode: normal;
+  z-index: 10;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.content .content-1 .hero .stack .stack-4 {
+  mix-blend-mode: normal;
+  justify-self: center;
+  align-self: center;
+  z-index: 1000;
+}
+.content .content-1 .hero .stack .stack-4 a {
+  width: 121px;
+  height: 41px;
+  display: grid;
+  text-decoration: none;
+  color: #000000;
+  transition: 0.7s;
+}
+.content .content-1 .hero .stack .stack-4 a ul {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  background-color: #ffffff;
+  outline-offset: 6px;
+  outline: 1px solid rgba(255, 255, 255, 0.1450980392);
+  justify-content: center;
+  border-radius: 8px;
+  transition: 0.6s;
+}
+.content .content-1 .hero .stack .stack-4 a ul li {
+  display: flex;
+}
+.content .content-1 .hero .stack .stack-4 :hover {
+  color: #8a8a8a;
+  transition: 0.6s;
+  outline-offset: 3px;
+}
+.content .content-2 {
+  margin-top: 33px;
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  grid-template-rows: repeat(2);
+  -webkit-box-shadow: 0px 0px 70px 0px rgba(140, 69, 255, 0.7);
+  -moz-box-shadow: 0px 0px 70px 0px rgba(140, 69, 255, 0.7);
+  box-shadow: 0px 0px 70px 0px rgba(140, 69, 255, 0.7);
+}
+.content .content-2 img {
+  z-index: 100;
+}
+.content .content-2 .circle_1 {
+  position: absolute;
+  width: 825px;
+  height: 825px;
+  border-radius: 50%;
+  display: grid;
+  background-color: #602a9a;
+  filter: blur(200px); /* Размытие слоя */
+  -webkit-filter: blur(200px); /* Для Safari */
+}
+.content .content-2 .circle_1 .circle_2 {
+  width: 569px;
+  height: 569px;
+  display: grid;
+  border-radius: 50%;
+  background-color: #622a9a;
+  filter: blur(50px); /* Размытие слоя */
+  -webkit-filter: blur(50px); /* Для Safari */
+}
+
+.circle_1,
+[class^=stack-] {
+  text-align: center;
+  display: grid;
+}
+
+.companies {
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.8431372549);
+  z-index: 10000;
+}
+.companies .companies-1 {
+  color: rgba(255, 255, 255, 0.7058823529);
+  margin-top: 59px;
+  margin-bottom: 40px;
+}
+.companies .companies-2 {
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: "A B C D" "E F G H";
+}
+.companies .companies-2 .logo-1 {
+  grid-area: A;
+}
+.companies .companies-2 .logo-2 {
+  grid-area: B;
+}
+.companies .companies-2 .logo-3 {
+  grid-area: C;
+}
+.companies .companies-2 .logo-4 {
+  grid-area: D;
+}
+.companies .companies-2 .logo-5 {
+  grid-area: E;
+}
+.companies .companies-2 .logo-6 {
+  grid-area: F;
+}
+.companies .companies-2 .logo-7 {
+  grid-area: G;
+}
+.companies .companies-2 .logo-8 {
+  grid-area: H;
+}
+.companies .companies-2 a {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.companies .companies-2 a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(30deg, rgba(255, 255, 255, 0) 15%, rgba(140, 69, 255, 0.4078431373) 100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
+  z-index: -1;
+}
+.companies .companies-2 a:hover::before {
+  opacity: 1;
+}
+
+[class^=companies-] {
+  text-align: center;
+  display: grid;
+}
+
+[class^=logos-] {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  height: 98px;
+  width: 235px;
+  border: 1px solid rgba(255, 255, 255, 0.1450980392);
+  border-radius: 10px;
+}
+
+.bento {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  gap: 31px;
+}
+.bento span {
+  font-size: 16px;
+  font-weight: medium;
+  color: #ffffff;
+}
+.bento p {
+  color: rgba(255, 255, 255, 0.6431372549);
+  font-weight: regular;
+  font-size: 16px;
+}
+.bento .bento-1 {
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+}
+.bento .bento-1 .seo-1 {
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 31px;
+}
+.bento .bento-1 .seo-1 h1 {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: medium;
+  width: 553px;
+  margin-top: 153px;
+}
+.bento .bento-1 .seo-2 {
+  grid-template-columns: auto auto;
+  width: 80vw;
+  gap: 10px;
+}
+.bento .bento-1 .seo-2 .seo-3 {
+  border: 1px solid rgba(255, 255, 255, 0.1450980392);
+  border-radius: 10px;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  padding-bottom: 50px;
+  justify-content: space-around;
+}
+.bento .bento-1 .seo-2 .seo-3 img {
+  justify-self: center;
+  align-self: center;
+}
+.bento .bento-1 .seo-2 .seo-3 .text {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+.bento .bento-1 .seo-2 .seo-3 .text p {
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+}
+.bento .bento-1 .seo-2 .seo-3 .text span {
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+}
+.bento .bento-1 .seo-2 .seo-4 {
+  border: 1px solid rgba(255, 255, 255, 0.1450980392);
+  position: relative;
+  border-radius: 10px;
+  align-content: end;
+  width: 55vw;
+  height: 100%;
+  min-height: 300px;
+  background: url(../../../img/app.png) no-repeat;
+}
+.bento .bento-1 .seo-2 .seo-4 .seo_back {
+  display: grid;
+  align-content: end;
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(83, 37, 152, 0.8235294118));
+}
+.bento .bento-1 .seo-2 .seo-4 .text_frendly {
+  mix-blend-mode: normal;
+  display: grid;
+  gap: 10px;
+  padding-bottom: 50px;
+}
+.bento .bento-1 .seo-2 .seo-4 .text_frendly p {
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+}
+.bento .bento-1 .seo-2 .seo-4 .text_frendly span {
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+}
+.bento .bento-2 {
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+}
+.bento .bento-2 .seo-1 {
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 31px;
+}
+.bento .bento-2 .seo-1 h1 {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: medium;
+  width: 553px;
+  margin-top: 153px;
+}
+.bento .bento-2 .seo-2 {
+  grid-template-columns: auto auto;
+  width: 80vw;
+  gap: 10px;
+}
+.bento .bento-2 .seo-2 .seo-3 {
+  border: 1px solid rgba(255, 255, 255, 0.1450980392);
+  border-radius: 10px;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  padding-bottom: 50px;
+  justify-content: space-around;
+}
+.bento .bento-2 .seo-2 .seo-3 img {
+  justify-self: center;
+  align-self: center;
+}
+.bento .bento-2 .seo-2 .seo-3 .text {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+.bento .bento-2 .seo-2 .seo-3 .text p {
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+}
+.bento .bento-2 .seo-2 .seo-3 .text span {
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+}
+.bento .bento-2 .seo-2 .seo-4 {
+  border: 1px solid rgba(255, 255, 255, 0.1450980392);
+  position: relative;
+  border-radius: 10px;
+  align-content: end;
+  width: 55vw;
+  height: 100%;
+  min-height: 300px;
+  background: url(../../../img/app_report.png) no-repeat;
+}
+.bento .bento-2 .seo-2 .seo-4 .seo_back {
+  display: grid;
+  align-content: end;
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(83, 37, 152, 0.8235294118));
+}
+.bento .bento-2 .seo-2 .seo-4 .text_frendly {
+  mix-blend-mode: normal;
+  display: grid;
+  gap: 10px;
+  padding-bottom: 50px;
+}
+.bento .bento-2 .seo-2 .seo-4 .text_frendly p {
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+}
+.bento .bento-2 .seo-2 .seo-4 .text_frendly span {
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+}
+
+[class^=bento-] {
+  text-align: left;
+  display: grid;
+}
+
+[class^=seo-] {
+  text-align: left;
+  display: grid;
+}/*# sourceMappingURL=style.css.map */
