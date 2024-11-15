@@ -87,6 +87,7 @@ html .main,
 body .main {
   display: grid;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -230,6 +231,7 @@ body .main {
   display: grid;
   background-color: rgba(0, 0, 0, 0.8431372549);
   z-index: 10000;
+  width: 98vw;
 }
 .companies .companies-1 {
   color: rgba(255, 255, 255, 0.7058823529);
@@ -306,6 +308,8 @@ body .main {
   align-items: center;
   width: 80vw;
   gap: 31px;
+  align-self: center;
+  justify-self: center;
 }
 .bento span {
   font-size: 16px;
@@ -500,4 +504,242 @@ body .main {
 [class^=seo-] {
   text-align: left;
   display: grid;
+}
+
+.features {
+  display: grid;
+  background: linear-gradient(150deg, #190d2e 0%, #150b26 18%, #020103 100%);
+  width: 98vw;
+  margin-top: 80px;
+}
+.features .box {
+  display: grid;
+  padding: 5% 5% 5% 5%;
+  gap: 40px;
+}
+.features .box h1 {
+  font-size: 65px;
+  font-weight: medium;
+  color: #ffffff;
+  text-align: left;
+  width: 30%;
+}
+.features .box .line {
+  display: grid;
+  gap: 123px;
+  grid-template-columns: auto auto auto;
+}
+
+[class^=features-] {
+  text-align: left;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+}
+[class^=features-] span {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: medium;
+}
+[class^=features-] p {
+  color: hsla(0, 0%, 100%, 0.7);
+  font-size: 16px;
+  font-weight: medium;
+  width: 70%;
+}
+[class^=features-] img {
+  margin-right: 5px;
+}
+
+[class^=line-] {
+  display: grid;
+  gap: 40px;
+}
+
+@media (min-width: 1919px) {
+  [class^=features-] p {
+    width: 60%;
+  }
+}
+.clients {
+  display: grid;
+  gap: 104px;
+  width: 98vw;
+  margin-bottom: 78px;
+  justify-content: center;
+}
+.clients .clients-1 {
+  margin-top: 78px;
+  gap: 28px;
+  justify-content: center;
+}
+.clients .clients-1 h1 {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: medium;
+  justify-self: center;
+}
+.clients .clients-1 h2 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: normal;
+  justify-self: center;
+}
+.clients .clients-2 {
+  justify-content: center;
+  gap: 45px;
+}
+.clients .clients-2 .clients-4 {
+  justify-self: center;
+  grid-template-columns: 30vw 60vw;
+  gap: 45px;
+}
+.clients .clients-2 .clients-4 .image {
+  display: grid;
+  justify-content: end;
+}
+.clients .clients-2 .clients-4 .image img {
+  -webkit-box-shadow: 0px 0px 100px 3px rgba(140, 69, 255, 0.5);
+  -moz-box-shadow: 0px 0px 100px 3px rgba(140, 69, 255, 0.5);
+  box-shadow: 0px 0px 100px 3px rgba(140, 69, 255, 0.5);
+}
+.clients .clients-2 .clients-4 .clients-3 {
+  width: 400px;
+  padding: 20px 0 20px 0px;
+  align-items: center;
+  text-align: left;
+  gap: 15px;
+}
+
+[class^=clients-] {
+  display: grid;
+  width: 98vw;
+  color: #ffffff;
+}
+[class^=clients-] h2 {
+  font-size: 23px;
+  font-weight: medium;
+}
+[class^=clients-] span {
+  font-size: 16px;
+  font-weight: regilar;
+}
+[class^=clients-] p {
+  font-size: 14px;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.toggle-button-cover {
+  display: table-cell;
+  position: relative;
+  width: 200px;
+  height: 140px;
+  box-sizing: border-box;
+}
+
+.button-cover {
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px -8px #c5d6d6;
+  border-radius: 4px;
+}
+
+.button-cover:before {
+  counter-increment: button-counter;
+  content: counter(button-counter);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #d7e3e3;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px;
+}
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 74px;
+  height: 36px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 100px;
+}
+
+.button.b2 {
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #000000;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+/* Button 3 */
+#button-3 .knobs:before {
+  content: "NO";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+#button-3 .checkbox:active + .knobs:before {
+  width: 46px;
+  border-radius: 100px;
+}
+
+#button-3 .checkbox:checked:active + .knobs:before {
+  margin-left: -26px;
+}
+
+#button-3 .checkbox:checked + .knobs:before {
+  content: "YES";
+  left: 42px;
+  background-color: #ffffff;
+}
+
+#button-3 .checkbox:checked ~ .layer {
+  background-color: #532598;
 }/*# sourceMappingURL=style.css.map */

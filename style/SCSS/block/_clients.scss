@@ -1,0 +1,72 @@
+.clients {
+    display: grid;
+    gap: 104px;
+    width: 98vw;
+    margin-bottom: 78px;
+    justify-content: center;
+
+    & .clients-1 {
+        margin-top: 78px;
+        gap: 28px;
+        justify-content: center;
+
+        & h1 {
+            color: #ffffff;
+            font-size: 56px;
+            font-weight: medium;
+            justify-self: center;
+        }
+        & h2 {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: normal;
+            justify-self: center;
+        }
+    }
+    & .clients-2 {
+        justify-content: center;
+        gap: 45px;
+
+        & .clients-4 {
+            justify-self: center;
+            grid-template-columns: 30vw 60vw;
+            gap: 45px;
+
+            & .image {
+                display: grid;
+                justify-content: end;
+
+                & img {
+                    -webkit-box-shadow: 0px 0px 100px 3px rgba(140, 69, 255, 0.5);
+                    -moz-box-shadow: 0px 0px 100px 3px rgba(140, 69, 255, 0.5);
+                    box-shadow: 0px 0px 100px 3px rgba(140, 69, 255, 0.5);
+                }
+            }
+            & .clients-3 {
+                width: 400px;
+                padding: 20px 0 20px 0px;
+                align-items: center;
+                text-align: left;
+                gap: 15px;
+            }
+        }
+    }
+}
+[class^="clients-"] {
+    display: grid;
+    width: 98vw;
+    color: #ffffff;
+
+    & h2 {
+        font-size: 23px;
+        font-weight: medium;
+    }
+    & span {
+        font-size: 16px;
+        font-weight: regilar;
+    }
+    & p {
+        font-size: 14px;
+        color: hsla(0, 0%, 100%, 0.7);
+    }
+}
