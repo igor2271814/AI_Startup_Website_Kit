@@ -14,14 +14,16 @@
   border-bottom: solid 1px rgba(255, 255, 255, 0.1450980392);
   gap: 74px;
   background-color: rgba(255, 255, 255, 0.048);
-  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 .header .border {
   display: grid;
   align-items: center;
   border: solid 1px rgba(255, 255, 255, 0.1450980392);
   border-radius: 2em;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   grid-template-columns: repeat(5, 1fr);
   height: 42px;
   width: 512px;
@@ -194,8 +196,6 @@ body .main {
   justify-self: center;
   align-self: center;
   grid-template-rows: repeat(2);
-  -webkit-box-shadow: 0px 0px 70px 0px rgba(140, 69, 255, 0.7);
-  -moz-box-shadow: 0px 0px 70px 0px rgba(140, 69, 255, 0.7);
   box-shadow: 0px 0px 70px 0px rgba(140, 69, 255, 0.7);
 }
 .content .content-2 img {
@@ -599,8 +599,6 @@ body .main {
   justify-content: end;
 }
 .clients .clients-2 .clients-4 .image img {
-  -webkit-box-shadow: 0px 0px 100px 3px rgba(140, 69, 255, 0.5);
-  -moz-box-shadow: 0px 0px 100px 3px rgba(140, 69, 255, 0.5);
   box-shadow: 0px 0px 100px 3px rgba(140, 69, 255, 0.5);
 }
 .clients .clients-2 .clients-4 .clients-3 {
@@ -629,8 +627,166 @@ body .main {
   color: hsla(0, 0%, 100%, 0.7);
 }
 
+.pricing {
+  width: 98vw;
+  display: grid;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.pricing h1 {
+  font-size: 56px;
+  font-weight: medium;
+  margin-bottom: 40px;
+  text-align: center;
+  color: white;
+}
+.pricing h2 {
+  font-size: 20px;
+  font-weight: regular;
+  color: white;
+  text-align: center;
+}
+.pricing .pricing-2 {
+  display: grid;
+  width: 941px;
+}
+.pricing .pricing-2 .circle_1 {
+  left: 500px;
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  border-radius: 50%;
+  display: grid;
+  background-color: #7511df;
+  filter: blur(200px); /* Размытие слоя */
+  -webkit-filter: blur(200px); /* Для Safari */
+  z-index: 10;
+}
+.pricing .pricing-2 .circle_1 .circle_2 {
+  width: 300px;
+  height: 500px;
+  display: grid;
+  border-radius: 50%;
+  background-color: #7511df;
+  filter: blur(100px); /* Размытие слоя */
+  -webkit-filter: blur(100px); /* Для Safari */
+  z-index: 10;
+}
+.pricing .pricing-2 .cart {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.pricing .pricing-2 .cart p {
+  font-size: 24px;
+  color: white;
+  font-weight: medium;
+}
+.pricing .pricing-2 .cart span {
+  font-size: 16px;
+  font-weight: regular;
+  color: rgba(255, 255, 255, 0.6274509804);
+}
+.pricing .pricing-2 .cart li {
+  font-size: 14px;
+  font-weight: regular;
+  color: #ffffff;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+.pricing .pricing-2 .cart a {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0.0980392157);
+  border-radius: 1em;
+  border: 1px solid #3d3d3d;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.412) inset;
+}
+.pricing .pricing-2 .cart .cart_info {
+  background-color: rgba(0, 0, 0, 0.7529411765);
+  padding: 20px;
+  width: 307px;
+  border-radius: 1em;
+  border: rgba(255, 255, 255, 0.1647058824) 1px solid;
+  height: 500px;
+  justify-content: start;
+  text-align: left;
+}
+.pricing .pricing-2 .cart .cart_info .cart_info_up {
+  display: grid;
+  align-items: start;
+  grid-auto-rows: 40px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1647058824);
+}
+.pricing .pricing-2 .cart .cart_info .cart_info_down {
+  margin-top: 20px;
+  display: grid;
+  align-content: space-between;
+  height: 75%;
+}
+.pricing .pricing-2 .cart .cart_info .cart_info_down li {
+  list-style-type: none;
+  margin-bottom: 13px;
+}
+.pricing .pricing-2 .cart .cart_info .cart_info_down li:before {
+  content: "✓";
+}
+.pricing .pricing-2 .cart .cart-2 {
+  background: url(../../img/Pattern.png);
+}
+.pricing .pricing-2 .cart .cart-2 .cart_info_pro {
+  background: linear-gradient(180deg, rgb(0, 0, 0) 26%, rgba(148, 41, 255, 0.2));
+  mix-blend-mode: normal;
+  padding: 20px;
+  width: 307px;
+  border-radius: 1em;
+  border: rgba(255, 255, 255, 0.1647058824) 1px solid;
+  height: 500px;
+  justify-content: start;
+  text-align: left;
+}
+.pricing .pricing-2 .cart .cart-2 .cart_info_pro .cart_info_up {
+  display: grid;
+  align-items: start;
+  grid-auto-rows: 40px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1647058824);
+}
+.pricing .pricing-2 .cart .cart-2 .cart_info_pro .cart_info_down {
+  margin-top: 20px;
+  display: grid;
+  align-content: space-between;
+  height: 75%;
+}
+.pricing .pricing-2 .cart .cart-2 .cart_info_pro .cart_info_down li {
+  list-style-type: none;
+  margin-bottom: 13px;
+}
+.pricing .pricing-2 .cart .cart-2 .cart_info_pro .cart_info_down li:before {
+  content: "✓";
+}
+.pricing .pricing-2 .cart .cart-2 .cart_info_pro .cart_info_down a {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(140, 69, 255, 0.4392156863);
+  box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.7) inset;
+}
+
+[class^=cart_info_down-] {
+  display: grid;
+}
+
 .toggle-button-cover {
-  display: table-cell;
+  justify-self: center;
+  display: grid;
+  text-align: center;
   position: relative;
   width: 200px;
   height: 140px;
@@ -742,4 +898,65 @@ body .main {
 
 #button-3 .checkbox:checked ~ .layer {
   background-color: #532598;
+}
+
+.join {
+  display: grid;
+  margin-bottom: 190px;
+  width: 98vw;
+  height: 500px;
+  mix-blend-mode: normal;
+  gap: 25px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.join h1 {
+  margin-top: 100px;
+  font-size: 56px;
+  font-weight: medium;
+  margin-bottom: 40px;
+  text-align: center;
+  color: white;
+}
+.join .join-2 {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+.join .join-2 input {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 300px;
+  height: 50px;
+  border-radius: 9px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.join .join-2 a {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+  height: 50px;
+  width: 100px;
+  border-radius: 9px;
+  text-align: center;
+}
+.join .join-3 {
+  justify-content: center;
+}
+.join .join-3 p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-weight: regular;
+}
+
+[class^=join-] {
+  display: grid;
+}
+
+.footer {
+  display: grid;
 }/*# sourceMappingURL=style.css.map */
